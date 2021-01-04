@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics- Data Types</title>
+    
+</head>
+<body>
+    <h1>Data Types in JS</h1>
+    <p>Javascript hase the following Data types.</p>
+    <img src="/CHAP1-Basics/img/data_types.jpg" alt="Data Types in Javascript">
+    <p>These are further divided into 2 types: primitive and referential, based on how they are treated in memory</p>
+    <img src="/CHAP1-Basics/img/primvsinf.jpg" alt="Primitive vs Reference Data Types">
+    <h2>Primitive data storage</h2>
+    <p>Primitive data types are stored in Stack memory (and hence they are quick to be assessed). There is less space available though.
+        When we store a primitive into the memory it stores value into the stack and locks the name to it as a accessor.
+        </p>
+        <img src="/CHAP1-Basics/img/primstorage.jpg" alt="Primitive storage and access">
+    <h2>Reference data type Storage</h2>
+        <p>Reference data types are stored in heap by contrast and a pointer to it to the stack. The variable name is locked onto the pointer for access</p>
+    <img src="/CHAP1-Basics/img/refstorage.jpg" alt="Reference data type storage">
+    
+    <h2>Assignment Differences</h2>
+    <p>When we make a copy of the primitive data type we make a copy of the value and are stored separately. Which means the values of the different variables can be manipulated separately.
+    </p>
+    <img src="/CHAP1-Basics/img/Primitive assignment.jpg" alt="Variable assignement using primitive data type">
+    <p>When we make a copy of the reference data type we only copy the pointer to the new const. Which means once the value of the object in heap is overwritten all the variables attached to the pointer get updated.
+    </p>
+    <img src="/CHAP1-Basics/img/Reference assignment.jpg" alt="">
+    <script src=sandbox.js></script>
+    
+</body>
+</html>
